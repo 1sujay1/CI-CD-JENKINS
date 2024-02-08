@@ -3,7 +3,7 @@ const app = express();
 
 app.get("/", (req, res) => {
   res.send(
-    `<h1>Congratulations!!!</h1><p>Server is Running with Auto Deployment</p>`
+    `<h1>Congratulations!!!</h1><p>Server is Running with Auto Deployment...</p>`
   );
 });
 app.listen(4000, () => {
