@@ -22,6 +22,7 @@ pipeline{
         
         stage('Deploy'){
             steps {
+                bat 'pm2 kill'
                 bat 'pm2 startOrRestart pm2.config.json'
             }
         }
